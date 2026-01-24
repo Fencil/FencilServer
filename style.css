@@ -24,6 +24,30 @@ header input {
   width: 250px;
 }
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
 main {
   padding: 20px;
   display: grid;
@@ -58,8 +82,39 @@ main {
 
 .server-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.server-header h2 {
+  flex: 1;
+  line-height: 1.2;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: calc(1.2em * 2); /* 🔑 reserves space */
+}
+
+.server-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+
+  flex: 0 0 12px;
+  margin-top: 6px;
+}
+
+.server-status.online {
+  background-color: #2ecc71;
+  box-shadow: 0 0 6px rgba(46, 204, 113, 0.8);
+}
+
+.server-status.offline {
+  background-color: #e74c3c;
+  box-shadow: 0 0 6px rgba(231, 76, 60, 0.8);
 }
 
 .description {
@@ -72,12 +127,24 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  margin-top: auto;
+}
+
+.server-meta a {
+  color: #4fa1f0;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.server-meta a:hover {
+  color: #70c0ff;
 }
 
 .server-actions {
-  margin-top: auto;
   display: flex;
   gap: 10px;
+  margin-top: 12px;
 }
 
 button {
