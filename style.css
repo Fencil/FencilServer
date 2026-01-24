@@ -196,4 +196,15 @@ button {
 .copy-ip {
   background: #334155;
   color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.copy-ip:hover {
+  background: #475569;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.copy-ip:active {
+  transform: scale(0.95);
 }
