@@ -113,7 +113,7 @@ main {
     box-shadow: 0 0 6px rgba(46, 204, 113, 0.8);
   }
   50% {
-    transform: scale(1.15); /* grows slightly */
+    transform: scale(1.25); /* grows slightly */
     box-shadow: 0 0 12px rgba(46, 204, 113, 0.6);
   }
   100% {
@@ -208,3 +208,4 @@ button {
 .copy-ip:active {
   transform: scale(0.95);
 }
+
