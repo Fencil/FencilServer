@@ -107,9 +107,26 @@ main {
   margin-top: 6px;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 6px rgba(46, 204, 113, 0.8);
+  }
+  50% {
+    transform: scale(1.15); /* grows slightly */
+    box-shadow: 0 0 12px rgba(46, 204, 113, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 6px rgba(46, 204, 113, 0.8);
+  }
+}
+
 .server-status.online {
   background-color: #2ecc71;
   box-shadow: 0 0 6px rgba(46, 204, 113, 0.8);
+
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
 .server-status.offline {
