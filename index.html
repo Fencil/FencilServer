@@ -2,127 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fencil's Server List</title>
   <link rel="icon" type="image/x-icon" href="media/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="page-header">
+<header class="page-header" id="navbar">
   <div class="page-title">
-   <img src="media/logo_small.png" alt="" class="page-icon">
-   <h1>Fencil's Server List</h1>
+    <img src="media/logo_small.png" alt="" class="page-icon">
+    <h1>Fencil's Server List</h1>
   </div>
-
   <input type="text" id="search" placeholder="Search servers...">
 </header>
 
+<div class="hero">
+  <div class="hero-tag">Game Servers</div>
+  <h2 class="hero-title">
+    FENCIL<span>SERVERS</span>
+  </h2>
+</div>
+
 <main id="server-list">
-  <!-- Server card -->
+
   <div class="server-card">
-      <div class="server-banner">
-    <img src="media/banner1.png" alt="Server Banner">
-  </div>
-    <div class="server-header">
-      <h2>All the Mods 10</h2>
-      <span class="server-status offline" title="Offline"></span>
+    <div class="server-banner">
+      <img src="media/banner1.png" alt="Server Banner">
     </div>
-
-    <p class="description">
-      Does "All the Mods" really contain ALL THE MODS? No, of course not.
-    </p>
-
-    <div class="server-meta">
-      <span>IP: atm10.fencil.xyz</span>
-      <span>
-        Modpack: 
-        <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-10" target="_blank" rel="noopener noreferrer">
-          All the Mods 10
-        </a>
-      </span>
-      <span>Modpack Version: 4.12</span>
-      <span>Version: 1.21.1</span>
-    </div>
-
-    <div class="server-actions">
-      <button class="copy-ip">Copy IP</button>
+    <div class="card-body">
+      <div class="server-header">
+        <h2>All the Mods 10</h2>
+        <span class="server-status offline" title="Offline"></span>
+      </div>
+      <p class="description">Does "All the Mods" really contain ALL THE MODS? No, of course not.</p>
+      <div class="server-meta">
+        <span>IP: atm10.fencil.xyz</span>
+        <span>Modpack: <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-10" target="_blank" rel="noopener noreferrer">All the Mods 10</a></span>
+        <span>Modpack Version: 4.12</span>
+        <span>Version: 1.21.1</span>
+      </div>
+      <div class="server-actions">
+        <button class="copy-ip">Copy IP</button>
+      </div>
     </div>
   </div>
 
-  
-
-
-
-    <div class="server-card">
-      <div class="server-banner">
-    <img src="media/banner2.png" alt="Server Banner">
-  </div>
-    <div class="server-header">
-      <h2>NightfallCraft: The Casket of Reveries</h2>
-      <span class="server-status offline" title="Offline"></span>
+  <div class="server-card">
+    <div class="server-banner">
+      <img src="media/banner2.png" alt="Server Banner">
     </div>
-
-    <p class="description">
-      In this modpack, you will play as a savior from beyond, heeding the guidance of the Watcher, defeating various bosses, retrieving the lost sparks, and lighting up the altar! Ultimately, challenge Wraithon to save the world!
-    </p>
-
-    <div class="server-meta">
-      <span>IP: nightfall.fencil.xyz</span>
-      <span>
-        Modpack: 
-        <a href="https://www.curseforge.com/minecraft/modpacks/nightfallcraft-the-casket-of-reveries" target="_blank" rel="noopener noreferrer">
-          NightfallCraft: The Casket of Reveries
-        </a>
-      </span>
-      <span>Modpack Version: 1.7.13.1</span>
-      <span>Version: 1.20.1</span>
-    </div>
-
-    <div class="server-actions">
-      <button class="copy-ip">Copy IP</button>
+    <div class="card-body">
+      <div class="server-header">
+        <h2>NightfallCraft: The Casket of Reveries</h2>
+        <span class="server-status offline" title="Offline"></span>
+      </div>
+      <p class="description">In this modpack, you will play as a savior from beyond, heeding the guidance of the Watcher, defeating various bosses, retrieving the lost sparks, and lighting up the altar! Ultimately, challenge Wraithon to save the world!</p>
+      <div class="server-meta">
+        <span>IP: nightfall.fencil.xyz</span>
+        <span>Modpack: <a href="https://www.curseforge.com/minecraft/modpacks/nightfallcraft-the-casket-of-reveries" target="_blank" rel="noopener noreferrer">NightfallCraft: The Casket of Reveries</a></span>
+        <span>Modpack Version: 1.7.13.1</span>
+        <span>Version: 1.20.1</span>
+      </div>
+      <div class="server-actions">
+        <button class="copy-ip">Copy IP</button>
+      </div>
     </div>
   </div>
 
-
-
-
-
-    <div class="server-card">
-      <div class="server-banner">
-    <img src="media/banner3.png" alt="Server Banner">
+  <div class="server-card">
+    <div class="server-banner">
+      <img src="media/banner3.png" alt="Server Banner">
+    </div>
+    <div class="card-body">
+      <div class="server-header">
+        <h2>Vanilla+ MC</h2>
+        <span class="server-status offline" title="Offline"></span>
+      </div>
+      <p class="description">Vanilla Server with QoL and Vanilla+ mods.</p>
+      <div class="server-meta">
+        <span>IP: vanilla.fencil.xyz</span>
+        <span>Modpack: <a href="https://drive.google.com/file/d/1B6c7GSKbBdbsNZ7ljpcEOGFdP7v17vnQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Vanilla+ MC</a></span>
+        <span>Modpack Version: 1.0.3</span>
+        <span>Version: 1.21.10</span>
+      </div>
+      <div class="server-actions">
+        <button class="copy-ip">Copy IP</button>
+      </div>
+    </div>
   </div>
-    <div class="server-header">
-      <h2>Vanilla+ MC</h2>
-      <span class="server-status offline" title="Offline"></span>
-    </div>
-
-    <p class="description">
-      Vanilla Server with QoL and Vanilla+ mods.
-    </p>
-
-    <div class="server-meta">
-      <span>IP: vanilla.fencil.xyz</span>
-      <span>
-        Modpack: 
-        <a href="https://drive.google.com/file/d/1B6c7GSKbBdbsNZ7ljpcEOGFdP7v17vnQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-          Vanilla+ MC
-        </a>
-      </span>
-      <span>Modpack Version: 1.0.3</span>
-      <span>Version: 1.21.10</span>
-    </div>
-
-    <div class="server-actions">
-      <button class="copy-ip">Copy IP</button>
-    </div>
-  </div>  
-
 
 </main>
+
+<footer>
+  <span>Fencil's Server List</span>
+  <span><a href="https://discord.com/invite/Y3Pz2MZwe3" target="_blank">Discord →</a></span>
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
