@@ -13,15 +13,10 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This pushes the footer to the bottom */
+  min-height: 100vh;
   font-family: 'DM Sans', sans-serif;
   font-weight: 300;
   line-height: 1.7;
@@ -191,9 +186,16 @@ main {
   margin: 0 auto;
   padding: 48px 40px 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 16px;
   flex-grow: 1;
+  align-items: stretch;
+}
+
+/* Centre lone last card */
+main:has(.server-card:last-child:nth-child(3n+1)) .server-card:last-child {
+  grid-column: 2;
 }
 
 /* SERVER CARD */
@@ -206,7 +208,7 @@ main {
   flex-direction: column;
   transition: border-color 0.3s, transform 0.25s;
   animation: fadeIn 0.5s ease both;
-  height: 100%; /* Ensure the card takes the full available height */
+
 }
 
 .server-card:hover {
@@ -265,6 +267,11 @@ main {
   color: var(--text);
   line-height: 1.3;
   flex: 1;
+  min-height: calc(0.95rem * 1.3 * 2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .server-status {
