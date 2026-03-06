@@ -187,7 +187,6 @@ main {
   padding: 48px 40px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
   gap: 16px;
   flex-grow: 1;
   align-items: stretch;
@@ -389,5 +388,6 @@ footer a {
   #search { width: 160px; }
   .hero { padding: 110px 24px 56px; }
   main { padding: 32px 16px 80px; grid-template-columns: 1fr; }
+  main .server-card:last-child { grid-column: 1 !important; }
   footer { padding: 24px 20px; flex-direction: column; gap: 10px; text-align: center; }
 }
